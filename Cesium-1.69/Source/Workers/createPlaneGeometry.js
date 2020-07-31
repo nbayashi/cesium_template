@@ -1,5 +1,5 @@
 /* This file is automatically rebuilt by the Cesium build process. */
-define(['./when-ef0df1c5', './Check-eef37841', './Math-9bc506ad', './Cartesian2-e248b6a8', './Transforms-f7ab23c1', './RuntimeError-0a1a187a', './WebGLConstants-50edbdfc', './ComponentDatatype-5633ad88', './GeometryAttribute-aed2cdaf', './GeometryAttributes-cb2382b3', './VertexFormat-ab7523e7'], function (when, Check, _Math, Cartesian2, Transforms, RuntimeError, WebGLConstants, ComponentDatatype, GeometryAttribute, GeometryAttributes, VertexFormat) { 'use strict';
+define(['./when-e6985d2a', './Check-24cae389', './Math-392d0035', './Cartesian2-a5d6dde9', './Transforms-81680c41', './RuntimeError-61701d3e', './WebGLConstants-34c08bc0', './ComponentDatatype-cb08e294', './GeometryAttribute-6d403cd9', './GeometryAttributes-d6ea8c2b', './VertexFormat-2df57ea4'], function (when, Check, _Math, Cartesian2, Transforms, RuntimeError, WebGLConstants, ComponentDatatype, GeometryAttribute, GeometryAttributes, VertexFormat) { 'use strict';
 
   /**
    * Describes geometry representing a plane centered at the origin, with a unit width and length.
@@ -7,7 +7,7 @@ define(['./when-ef0df1c5', './Check-eef37841', './Math-9bc506ad', './Cartesian2-
    * @alias PlaneGeometry
    * @constructor
    *
-   * @param {Object} options Object with the following properties:
+   * @param {Object} [options] Object with the following properties:
    * @param {VertexFormat} [options.vertexFormat=VertexFormat.DEFAULT] The vertex attributes to be computed.
    *
    * @example

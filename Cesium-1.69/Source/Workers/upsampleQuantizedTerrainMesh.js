@@ -1,10 +1,10 @@
 /* This file is automatically rebuilt by the Cesium build process. */
-define(['./when-ef0df1c5', './Check-eef37841', './Math-9bc506ad', './Cartesian2-e248b6a8', './Transforms-f7ab23c1', './RuntimeError-0a1a187a', './WebGLConstants-50edbdfc', './ComponentDatatype-5633ad88', './AttributeCompression-7fe95165', './IndexDatatype-1715c2a7', './IntersectionTests-86344c58', './Plane-a866d2d6', './createTaskProcessorWorker', './EllipsoidTangentPlane-48f30934', './OrientedBoundingBox-c518a1f0', './TerrainEncoding-42fd6893'], function (when, Check, _Math, Cartesian2, Transforms, RuntimeError, WebGLConstants, ComponentDatatype, AttributeCompression, IndexDatatype, IntersectionTests, Plane, createTaskProcessorWorker, EllipsoidTangentPlane, OrientedBoundingBox, TerrainEncoding) { 'use strict';
+define(['./when-e6985d2a', './Check-24cae389', './Math-392d0035', './Cartesian2-a5d6dde9', './Transforms-81680c41', './RuntimeError-61701d3e', './WebGLConstants-34c08bc0', './ComponentDatatype-cb08e294', './AttributeCompression-114c6354', './IndexDatatype-1be7d1f8', './IntersectionTests-f17c84f0', './Plane-ac6a1d3e', './createTaskProcessorWorker', './EllipsoidTangentPlane-85280670', './OrientedBoundingBox-d8219c10', './TerrainEncoding-a793a9ee'], function (when, Check, _Math, Cartesian2, Transforms, RuntimeError, WebGLConstants, ComponentDatatype, AttributeCompression, IndexDatatype, IntersectionTests, Plane, createTaskProcessorWorker, EllipsoidTangentPlane, OrientedBoundingBox, TerrainEncoding) { 'use strict';
 
   /**
    * Contains functions for operating on 2D triangles.
    *
-   * @exports Intersections2D
+   * @namespace Intersections2D
    */
   var Intersections2D = {};
 

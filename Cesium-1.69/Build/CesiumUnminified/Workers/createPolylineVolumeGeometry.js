@@ -21,7 +21,7 @@
  * See https://github.com/CesiumGS/cesium/blob/master/LICENSE.md for full licensing details.
  */
 
-define(['./when-b43ff45e', './Check-d404a0fe', './Math-ff83510d', './Cartesian2-d59b2dc1', './Transforms-80c667c2', './RuntimeError-bf10f3d5', './WebGLConstants-56de22c0', './ComponentDatatype-560e725a', './GeometryAttribute-ea3e1579', './GeometryAttributes-fbf888b4', './AttributeCompression-43e9d5b6', './GeometryPipeline-43cf88e7', './EncodedCartesian3-b3206de4', './IndexDatatype-f0ba7ec6', './IntersectionTests-3c24f322', './Plane-d2fbaf25', './VertexFormat-0205f272', './arrayRemoveDuplicates-f33bd433', './BoundingRectangle-2fc07f87', './EllipsoidTangentPlane-db8f747d', './EllipsoidRhumbLine-cf4aaf05', './PolygonPipeline-30566ee8', './PolylineVolumeGeometryLibrary-54c67fcc', './EllipsoidGeodesic-f611122a', './PolylinePipeline-3f27eaf4'], function (when, Check, _Math, Cartesian2, Transforms, RuntimeError, WebGLConstants, ComponentDatatype, GeometryAttribute, GeometryAttributes, AttributeCompression, GeometryPipeline, EncodedCartesian3, IndexDatatype, IntersectionTests, Plane, VertexFormat, arrayRemoveDuplicates, BoundingRectangle, EllipsoidTangentPlane, EllipsoidRhumbLine, PolygonPipeline, PolylineVolumeGeometryLibrary, EllipsoidGeodesic, PolylinePipeline) { 'use strict';
+define(['./when-54c2dc71', './Check-6c0211bc', './Math-1124a290', './Cartesian2-33d2657c', './Transforms-8be64844', './RuntimeError-2109023a', './WebGLConstants-76bb35d1', './ComponentDatatype-a26dd044', './GeometryAttribute-e9a8b203', './GeometryAttributes-4fcfcf40', './AttributeCompression-75249b5e', './GeometryPipeline-466ad516', './EncodedCartesian3-6c97231d', './IndexDatatype-25023891', './IntersectionTests-afc38163', './Plane-fa30fc46', './VertexFormat-4d8b817a', './arrayRemoveDuplicates-0263f42c', './BoundingRectangle-dede91e8', './EllipsoidTangentPlane-ce6e380f', './EllipsoidRhumbLine-5f1492e5', './PolygonPipeline-9f9b7763', './PolylineVolumeGeometryLibrary-a916e03e', './EllipsoidGeodesic-0f41968b', './PolylinePipeline-9d785032'], function (when, Check, _Math, Cartesian2, Transforms, RuntimeError, WebGLConstants, ComponentDatatype, GeometryAttribute, GeometryAttributes, AttributeCompression, GeometryPipeline, EncodedCartesian3, IndexDatatype, IntersectionTests, Plane, VertexFormat, arrayRemoveDuplicates, BoundingRectangle, EllipsoidTangentPlane, EllipsoidRhumbLine, PolygonPipeline, PolylineVolumeGeometryLibrary, EllipsoidGeodesic, PolylinePipeline) { 'use strict';
 
   var warnings = {};
 
@@ -30,7 +30,7 @@ define(['./when-b43ff45e', './Check-d404a0fe', './Math-ff83510d', './Cartesian2-
    * <code>console.log</code> directly since this does not log duplicate messages
    * unless it is called from multiple workers.
    *
-   * @exports oneTimeWarning
+   * @function oneTimeWarning
    *
    * @param {String} identifier The unique identifier for this warning.
    * @param {String} [message=identifier] The message to log to the console.

@@ -46,6 +46,7 @@ import czm_acesTonemapping from './Functions/acesTonemapping.js'
 import czm_alphaWeight from './Functions/alphaWeight.js'
 import czm_antialias from './Functions/antialias.js'
 import czm_approximateSphericalCoordinates from './Functions/approximateSphericalCoordinates.js'
+import czm_backFacing from './Functions/backFacing.js'
 import czm_branchFreeTernary from './Functions/branchFreeTernary.js'
 import czm_cascadeColor from './Functions/cascadeColor.js'
 import czm_cascadeDistance from './Functions/cascadeDistance.js'
@@ -55,7 +56,7 @@ import czm_columbusViewMorph from './Functions/columbusViewMorph.js'
 import czm_computePosition from './Functions/computePosition.js'
 import czm_cosineAndSine from './Functions/cosineAndSine.js'
 import czm_decompressTextureCoordinates from './Functions/decompressTextureCoordinates.js'
-import czm_depthClampFarPlane from './Functions/depthClampFarPlane.js'
+import czm_depthClamp from './Functions/depthClamp.js'
 import czm_eastNorthUpToEyeCoordinates from './Functions/eastNorthUpToEyeCoordinates.js'
 import czm_ellipsoidContainsPoint from './Functions/ellipsoidContainsPoint.js'
 import czm_ellipsoidWgs84TextureCoordinates from './Functions/ellipsoidWgs84TextureCoordinates.js'
@@ -110,7 +111,7 @@ import czm_unpackDepth from './Functions/unpackDepth.js'
 import czm_unpackFloat from './Functions/unpackFloat.js'
 import czm_vertexLogDepth from './Functions/vertexLogDepth.js'
 import czm_windowToEyeCoordinates from './Functions/windowToEyeCoordinates.js'
-import czm_writeDepthClampedToFarPlane from './Functions/writeDepthClampedToFarPlane.js'
+import czm_writeDepthClamp from './Functions/writeDepthClamp.js'
 import czm_writeLogDepth from './Functions/writeLogDepth.js'
 import czm_writeNonPerspective from './Functions/writeNonPerspective.js'
 import czm_XYZToRGB from './Functions/XYZToRGB.js'
@@ -163,6 +164,7 @@ export default {
     czm_alphaWeight : czm_alphaWeight,
     czm_antialias : czm_antialias,
     czm_approximateSphericalCoordinates : czm_approximateSphericalCoordinates,
+    czm_backFacing : czm_backFacing,
     czm_branchFreeTernary : czm_branchFreeTernary,
     czm_cascadeColor : czm_cascadeColor,
     czm_cascadeDistance : czm_cascadeDistance,
@@ -172,7 +174,7 @@ export default {
     czm_computePosition : czm_computePosition,
     czm_cosineAndSine : czm_cosineAndSine,
     czm_decompressTextureCoordinates : czm_decompressTextureCoordinates,
-    czm_depthClampFarPlane : czm_depthClampFarPlane,
+    czm_depthClamp : czm_depthClamp,
     czm_eastNorthUpToEyeCoordinates : czm_eastNorthUpToEyeCoordinates,
     czm_ellipsoidContainsPoint : czm_ellipsoidContainsPoint,
     czm_ellipsoidWgs84TextureCoordinates : czm_ellipsoidWgs84TextureCoordinates,
@@ -227,7 +229,7 @@ export default {
     czm_unpackFloat : czm_unpackFloat,
     czm_vertexLogDepth : czm_vertexLogDepth,
     czm_windowToEyeCoordinates : czm_windowToEyeCoordinates,
-    czm_writeDepthClampedToFarPlane : czm_writeDepthClampedToFarPlane,
+    czm_writeDepthClamp : czm_writeDepthClamp,
     czm_writeLogDepth : czm_writeLogDepth,
     czm_writeNonPerspective : czm_writeNonPerspective,
     czm_XYZToRGB : czm_XYZToRGB

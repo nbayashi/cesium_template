@@ -1,5 +1,5 @@
 /* This file is automatically rebuilt by the Cesium build process. */
-define(['./when-ef0df1c5', './Check-eef37841', './Math-9bc506ad', './Cartesian2-e248b6a8', './Transforms-f7ab23c1', './RuntimeError-0a1a187a', './WebGLConstants-50edbdfc', './ComponentDatatype-5633ad88', './GeometryAttribute-aed2cdaf', './GeometryAttributes-cb2382b3', './AttributeCompression-7fe95165', './GeometryPipeline-0dde740d', './EncodedCartesian3-eda74fa8', './IndexDatatype-1715c2a7', './IntersectionTests-86344c58', './Plane-a866d2d6', './VertexFormat-ab7523e7', './arrayRemoveDuplicates-c75a814c', './BoundingRectangle-a74b3027', './EllipsoidTangentPlane-48f30934', './EllipsoidRhumbLine-3f1131e9', './PolygonPipeline-11409718', './PolylineVolumeGeometryLibrary-d34ad1a7', './EllipsoidGeodesic-81a4cf59', './PolylinePipeline-b9c8f88b'], function (when, Check, _Math, Cartesian2, Transforms, RuntimeError, WebGLConstants, ComponentDatatype, GeometryAttribute, GeometryAttributes, AttributeCompression, GeometryPipeline, EncodedCartesian3, IndexDatatype, IntersectionTests, Plane, VertexFormat, arrayRemoveDuplicates, BoundingRectangle, EllipsoidTangentPlane, EllipsoidRhumbLine, PolygonPipeline, PolylineVolumeGeometryLibrary, EllipsoidGeodesic, PolylinePipeline) { 'use strict';
+define(['./when-e6985d2a', './Check-24cae389', './Math-392d0035', './Cartesian2-a5d6dde9', './Transforms-81680c41', './RuntimeError-61701d3e', './WebGLConstants-34c08bc0', './ComponentDatatype-cb08e294', './GeometryAttribute-6d403cd9', './GeometryAttributes-d6ea8c2b', './AttributeCompression-114c6354', './GeometryPipeline-e8a01ba6', './EncodedCartesian3-c758025f', './IndexDatatype-1be7d1f8', './IntersectionTests-f17c84f0', './Plane-ac6a1d3e', './VertexFormat-2df57ea4', './arrayRemoveDuplicates-1ded18d8', './BoundingRectangle-cb9ae01b', './EllipsoidTangentPlane-85280670', './EllipsoidRhumbLine-5f1ab81f', './PolygonPipeline-197b7d5c', './PolylineVolumeGeometryLibrary-13b4e89b', './EllipsoidGeodesic-2a1a77d2', './PolylinePipeline-50fce9c3'], function (when, Check, _Math, Cartesian2, Transforms, RuntimeError, WebGLConstants, ComponentDatatype, GeometryAttribute, GeometryAttributes, AttributeCompression, GeometryPipeline, EncodedCartesian3, IndexDatatype, IntersectionTests, Plane, VertexFormat, arrayRemoveDuplicates, BoundingRectangle, EllipsoidTangentPlane, EllipsoidRhumbLine, PolygonPipeline, PolylineVolumeGeometryLibrary, EllipsoidGeodesic, PolylinePipeline) { 'use strict';
 
   var warnings = {};
 
@@ -8,7 +8,7 @@ define(['./when-ef0df1c5', './Check-eef37841', './Math-9bc506ad', './Cartesian2-
    * <code>console.log</code> directly since this does not log duplicate messages
    * unless it is called from multiple workers.
    *
-   * @exports oneTimeWarning
+   * @function oneTimeWarning
    *
    * @param {String} identifier The unique identifier for this warning.
    * @param {String} [message=identifier] The message to log to the console.

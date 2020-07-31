@@ -74,7 +74,7 @@ void main(void)\n\
 #ifdef CULL_FRAGMENTS\n\
     if (0.0 <= uv.x && uv.x <= 1.0 && 0.0 <= uv.y && uv.y <= 1.0) {\n\
         gl_FragColor.a = 1.0; // 0.0 alpha leads to discard from ShaderSource.createPickFragmentShaderSource\n\
-        czm_writeDepthClampedToFarPlane();\n\
+        czm_writeDepthClamp();\n\
     }\n\
 #else // CULL_FRAGMENTS\n\
         gl_FragColor.a = 1.0;\n\
@@ -110,6 +110,9 @@ void main(void)\n\
 \n\
     gl_FragColor = czm_phong(normalize(-eyeCoordinate.xyz), material, czm_lightDirectionEC);\n\
 #endif // FLAT\n\
+\n\
+    // Premultiply alpha. Required for classification primitives on translucent globe.\n\
+    gl_FragColor.rgb *= gl_FragColor.a;\n\
 \n\
 #else // PER_INSTANCE_COLOR\n\
 \n\
@@ -147,8 +150,11 @@ void main(void)\n\
     gl_FragColor = czm_phong(normalize(-eyeCoordinate.xyz), material, czm_lightDirectionEC);\n\
 #endif // FLAT\n\
 \n\
+    // Premultiply alpha. Required for classification primitives on translucent globe.\n\
+    gl_FragColor.rgb *= gl_FragColor.a;\n\
+\n\
 #endif // PER_INSTANCE_COLOR\n\
-    czm_writeDepthClampedToFarPlane();\n\
+    czm_writeDepthClamp();\n\
 #endif // PICK\n\
 }\n\
 ";

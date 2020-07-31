@@ -1,4 +1,4 @@
-export var VERSION = '1.69';
+export var VERSION = '1.71';
 export { default as appendForwardSlash } from './Core/appendForwardSlash.js';
 export { default as ApproximateTerrainHeights } from './Core/ApproximateTerrainHeights.js';
 export { default as ArcGISTiledElevationTerrainProvider } from './Core/ArcGISTiledElevationTerrainProvider.js';
@@ -93,6 +93,7 @@ export { default as GeographicTilingScheme } from './Core/GeographicTilingScheme
 export { default as Geometry } from './Core/Geometry.js';
 export { default as GeometryAttribute } from './Core/GeometryAttribute.js';
 export { default as GeometryAttributes } from './Core/GeometryAttributes.js';
+export { default as GeometryFactory } from './Core/GeometryFactory.js';
 export { default as GeometryInstance } from './Core/GeometryInstance.js';
 export { default as GeometryInstanceAttribute } from './Core/GeometryInstanceAttribute.js';
 export { default as GeometryOffsetAttribute } from './Core/GeometryOffsetAttribute.js';
@@ -190,6 +191,7 @@ export { default as PolylineVolumeGeometry } from './Core/PolylineVolumeGeometry
 export { default as PolylineVolumeGeometryLibrary } from './Core/PolylineVolumeGeometryLibrary.js';
 export { default as PolylineVolumeOutlineGeometry } from './Core/PolylineVolumeOutlineGeometry.js';
 export { default as PrimitiveType } from './Core/PrimitiveType.js';
+export { default as Proxy } from './Core/Proxy.js';
 export { default as QuadraticRealPolynomial } from './Core/QuadraticRealPolynomial.js';
 export { default as QuantizedMeshTerrainData } from './Core/QuantizedMeshTerrainData.js';
 export { default as QuarticRealPolynomial } from './Core/QuarticRealPolynomial.js';
@@ -489,6 +491,9 @@ export { default as GlobeDepth } from './Scene/GlobeDepth.js';
 export { default as GlobeSurfaceShaderSet } from './Scene/GlobeSurfaceShaderSet.js';
 export { default as GlobeSurfaceTile } from './Scene/GlobeSurfaceTile.js';
 export { default as GlobeSurfaceTileProvider } from './Scene/GlobeSurfaceTileProvider.js';
+export { default as GlobeTranslucency } from './Scene/GlobeTranslucency.js';
+export { default as GlobeTranslucencyFramebuffer } from './Scene/GlobeTranslucencyFramebuffer.js';
+export { default as GlobeTranslucencyState } from './Scene/GlobeTranslucencyState.js';
 export { default as GoogleEarthEnterpriseImageryProvider } from './Scene/GoogleEarthEnterpriseImageryProvider.js';
 export { default as GoogleEarthEnterpriseMapsProvider } from './Scene/GoogleEarthEnterpriseMapsProvider.js';
 export { default as GridImageryProvider } from './Scene/GridImageryProvider.js';
@@ -658,6 +663,7 @@ export { default as _shadersReprojectWebMercatorVS } from './Shaders/ReprojectWe
 export { default as _shadersShadowVolumeAppearanceFS } from './Shaders/ShadowVolumeAppearanceFS.js';
 export { default as _shadersShadowVolumeAppearanceVS } from './Shaders/ShadowVolumeAppearanceVS.js';
 export { default as _shadersShadowVolumeFS } from './Shaders/ShadowVolumeFS.js';
+export { default as _shadersSkyAtmosphereCommon } from './Shaders/SkyAtmosphereCommon.js';
 export { default as _shadersSkyAtmosphereFS } from './Shaders/SkyAtmosphereFS.js';
 export { default as _shadersSkyAtmosphereVS } from './Shaders/SkyAtmosphereVS.js';
 export { default as _shadersSkyBoxFS } from './Shaders/SkyBoxFS.js';
@@ -860,6 +866,7 @@ export { default as _shadersacesTonemapping } from './Shaders/Builtin/Functions/
 export { default as _shadersalphaWeight } from './Shaders/Builtin/Functions/alphaWeight.js';
 export { default as _shadersantialias } from './Shaders/Builtin/Functions/antialias.js';
 export { default as _shadersapproximateSphericalCoordinates } from './Shaders/Builtin/Functions/approximateSphericalCoordinates.js';
+export { default as _shadersbackFacing } from './Shaders/Builtin/Functions/backFacing.js';
 export { default as _shadersbranchFreeTernary } from './Shaders/Builtin/Functions/branchFreeTernary.js';
 export { default as _shaderscascadeColor } from './Shaders/Builtin/Functions/cascadeColor.js';
 export { default as _shaderscascadeDistance } from './Shaders/Builtin/Functions/cascadeDistance.js';
@@ -869,7 +876,7 @@ export { default as _shaderscolumbusViewMorph } from './Shaders/Builtin/Function
 export { default as _shaderscomputePosition } from './Shaders/Builtin/Functions/computePosition.js';
 export { default as _shaderscosineAndSine } from './Shaders/Builtin/Functions/cosineAndSine.js';
 export { default as _shadersdecompressTextureCoordinates } from './Shaders/Builtin/Functions/decompressTextureCoordinates.js';
-export { default as _shadersdepthClampFarPlane } from './Shaders/Builtin/Functions/depthClampFarPlane.js';
+export { default as _shadersdepthClamp } from './Shaders/Builtin/Functions/depthClamp.js';
 export { default as _shaderseastNorthUpToEyeCoordinates } from './Shaders/Builtin/Functions/eastNorthUpToEyeCoordinates.js';
 export { default as _shadersellipsoidContainsPoint } from './Shaders/Builtin/Functions/ellipsoidContainsPoint.js';
 export { default as _shadersellipsoidWgs84TextureCoordinates } from './Shaders/Builtin/Functions/ellipsoidWgs84TextureCoordinates.js';
@@ -924,7 +931,7 @@ export { default as _shadersunpackDepth } from './Shaders/Builtin/Functions/unpa
 export { default as _shadersunpackFloat } from './Shaders/Builtin/Functions/unpackFloat.js';
 export { default as _shadersvertexLogDepth } from './Shaders/Builtin/Functions/vertexLogDepth.js';
 export { default as _shaderswindowToEyeCoordinates } from './Shaders/Builtin/Functions/windowToEyeCoordinates.js';
-export { default as _shaderswriteDepthClampedToFarPlane } from './Shaders/Builtin/Functions/writeDepthClampedToFarPlane.js';
+export { default as _shaderswriteDepthClamp } from './Shaders/Builtin/Functions/writeDepthClamp.js';
 export { default as _shaderswriteLogDepth } from './Shaders/Builtin/Functions/writeLogDepth.js';
 export { default as _shaderswriteNonPerspective } from './Shaders/Builtin/Functions/writeNonPerspective.js';
 export { default as _shadersXYZToRGB } from './Shaders/Builtin/Functions/XYZToRGB.js';
