@@ -1,6 +1,6 @@
 // This file is automatically rebuilt by the Cesium build process.
 var hello_world_index = 96;
-var VERSION = '1.71';
+var VERSION = '1.73';
 var gallery_demos = [{
   "name": "3D Models",
   "isNew": false,
@@ -191,7 +191,7 @@ var gallery_demos = [{
   "img": "CZML Polyline.jpg"
 }, {
   "name": "CZML Polyline Volume",
-  "isNew": true,
+  "isNew": false,
   "img": "CZML Polyline Volume.jpg"
 }, {
   "name": "CZML Position Definitions",

@@ -73,7 +73,7 @@ uniform vec2 u_nightFadeDistance;\n\
 #endif\n\
 \n\
 #ifdef ENABLE_CLIPPING_PLANES\n\
-uniform sampler2D u_clippingPlanes;\n\
+uniform highp sampler2D u_clippingPlanes;\n\
 uniform mat4 u_clippingPlanesMatrix;\n\
 uniform vec4 u_clippingPlanesEdgeStyle;\n\
 #endif\n\
