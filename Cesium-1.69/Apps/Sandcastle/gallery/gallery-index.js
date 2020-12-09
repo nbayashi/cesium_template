@@ -1,6 +1,6 @@
 // This file is automatically rebuilt by the Cesium build process.
 var hello_world_index = 96;
-var VERSION = '1.73';
+var VERSION = '1.76';
 var gallery_demos = [{
   "name": "3D Models",
   "isNew": false,
@@ -650,4 +650,4 @@ var gallery_demos = [{
   "isNew": false,
   "img": "Z-Indexing Geometry.jpg"
 }];
-var has_new_gallery_demos = true;
+var has_new_gallery_demos = false;

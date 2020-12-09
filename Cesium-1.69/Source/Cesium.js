@@ -1,4 +1,4 @@
-export var VERSION = '1.73';
+export var VERSION = '1.76';
 export { default as ApproximateTerrainHeights } from './Core/ApproximateTerrainHeights.js';
 export { default as ArcGISTiledElevationTerrainProvider } from './Core/ArcGISTiledElevationTerrainProvider.js';
 export { default as ArcType } from './Core/ArcType.js';
