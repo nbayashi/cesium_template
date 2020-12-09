@@ -21,7 +21,7 @@
  * See https://github.com/CesiumGS/cesium/blob/master/LICENSE.md for full licensing details.
  */
 
-define(['./when-54c2dc71', './Check-6c0211bc', './Math-1124a290', './Cartesian2-33d2657c', './Transforms-033fcd04', './RuntimeError-2109023a', './WebGLConstants-76bb35d1', './ComponentDatatype-a26dd044', './AttributeCompression-75249b5e', './IntersectionTests-3ac13d3e', './Plane-2f5e9dda', './WebMercatorProjection-054890ef', './createTaskProcessorWorker', './EllipsoidTangentPlane-cc062bc9', './OrientedBoundingBox-7c56e2d8', './TerrainEncoding-39fe9d1d'], function (when, Check, _Math, Cartesian2, Transforms, RuntimeError, WebGLConstants, ComponentDatatype, AttributeCompression, IntersectionTests, Plane, WebMercatorProjection, createTaskProcessorWorker, EllipsoidTangentPlane, OrientedBoundingBox, TerrainEncoding) { 'use strict';
+define(['./when-54c2dc71', './Check-6c0211bc', './Math-850675ea', './Cartesian2-ea28baad', './Transforms-2e98bea0', './RuntimeError-2109023a', './WebGLConstants-76bb35d1', './ComponentDatatype-a26dd044', './AttributeCompression-8a649799', './IntersectionTests-d561f371', './Plane-1577f476', './WebMercatorProjection-75bbddfc', './createTaskProcessorWorker', './EllipsoidTangentPlane-fc24177b', './OrientedBoundingBox-765f5105', './TerrainEncoding-adb973b4'], function (when, Check, _Math, Cartesian2, Transforms, RuntimeError, WebGLConstants, ComponentDatatype, AttributeCompression, IntersectionTests, Plane, WebMercatorProjection, createTaskProcessorWorker, EllipsoidTangentPlane, OrientedBoundingBox, TerrainEncoding) { 'use strict';
 
   /**
    * The encoding that is used for a heightmap
