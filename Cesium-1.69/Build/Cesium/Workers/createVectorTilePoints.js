@@ -1,1 +1,26 @@
-define(["./when-54c2dc71","./Check-6c0211bc","./Math-fc8cecf5","./Cartesian2-bddc1162","./AttributeCompression-9fc99391","./createTaskProcessorWorker"],function(a,e,C,g,b,r){"use strict";var w=32767,k=new g.Cartographic,v=new g.Cartesian3,y=new g.Rectangle,A=new g.Ellipsoid,M={min:void 0,max:void 0};return r(function(a,e){var r=new Uint16Array(a.positions);!function(a){a=new Float64Array(a);var e=0;M.min=a[e++],M.max=a[e++],g.Rectangle.unpack(a,2,y),e+=g.Rectangle.packedLength,g.Ellipsoid.unpack(a,e,A)}(a.packedBuffer);var t=y,n=A,i=M.min,s=M.max,c=r.length/3,o=r.subarray(0,c),u=r.subarray(c,2*c),p=r.subarray(2*c,3*c);b.AttributeCompression.zigZagDeltaDecode(o,u,p);for(var f=new Float64Array(r.length),h=0;h<c;++h){var l=o[h],d=u[h],m=p[h],l=C.CesiumMath.lerp(t.west,t.east,l/w),d=C.CesiumMath.lerp(t.south,t.north,d/w),m=C.CesiumMath.lerp(i,s,m/w),m=g.Cartographic.fromRadians(l,d,m,k),m=n.cartographicToCartesian(m,v);g.Cartesian3.pack(m,f,3*h)}return e.push(f.buffer),{positions:f.buffer}})});
+/**
+ * @license
+ * Cesium - https://github.com/CesiumGS/cesium
+ * Version 1.114
+ *
+ * Copyright 2011-2022 Cesium Contributors
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ * http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ *
+ * Columbus View (Pat. Pend.)
+ *
+ * Portions licensed separately.
+ * See https://github.com/CesiumGS/cesium/blob/main/LICENSE.md for full licensing details.
+ */
+
+import{a as x}from"./chunk-4A2FUNVR.js";import{a as w}from"./chunk-4BEUQXNB.js";import{c}from"./chunk-CSZ6CHXI.js";import"./chunk-XXK6IR5Y.js";import{a as h,b as l,d as p}from"./chunk-IGBMENRT.js";import{a as i}from"./chunk-SEE54P6A.js";import"./chunk-JNX2URIY.js";import"./chunk-4Z3GDVJK.js";import"./chunk-LU3FCBPP.js";import"./chunk-S2577PU4.js";import"./chunk-2TPVVSVW.js";var u=32767,F=new l,L=new h,b=new c,y=new p,a={min:void 0,max:void 0};function V(t){t=new Float64Array(t);let o=0;a.min=t[o++],a.max=t[o++],c.unpack(t,o,b),o+=c.packedLength,p.unpack(t,o,y)}function z(t,o){let s=new Uint16Array(t.positions);V(t.packedBuffer);let e=b,C=y,A=a.min,P=a.max,n=s.length/3,f=s.subarray(0,n),g=s.subarray(n,2*n),d=s.subarray(2*n,3*n);w.zigZagDeltaDecode(f,g,d);let m=new Float64Array(s.length);for(let r=0;r<n;++r){let k=f[r],E=g[r],H=d[r],M=i.lerp(e.west,e.east,k/u),R=i.lerp(e.south,e.north,E/u),T=i.lerp(A,P,H/u),v=l.fromRadians(M,R,T,F),D=C.cartographicToCartesian(v,L);h.pack(D,m,r*3)}return o.push(m.buffer),{positions:m.buffer}}var G=x(z);export{G as default};
